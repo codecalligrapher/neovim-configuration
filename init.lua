@@ -1,19 +1,18 @@
 -- -- use Space as leader
--- vim.g.mapleader = "\\"
-
-
--- Setup globals
-require "globals.remaps"
-
-require "lsp.lsp"
+vim.g.mapleader = " "
 
 require "plugins.packer"
 
-require("bufferline").setup{}
+-- Setup globals
+require "globals.remaps"
+require "globals.options"
+
+require "lsp.lsp"
+
+
 
 vim.g.shell = "/usr/bin/zsh"
 
-require "globals.options"
 
 function save_view()
     vim.api.nvim_command('mkview')

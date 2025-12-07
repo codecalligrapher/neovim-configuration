@@ -63,7 +63,6 @@ return require('packer').startup(function()
 	use 'hrsh7th/cmp-cmdline'
 	use 'hrsh7th/nvim-cmp'
 
-	use 'SirVer/ultisnips'
 
     -- Lua snippet engine (primarily to fufill requirements in hrsh7th/nvim-cmp)
 	use 'L3MON4D3/LuaSnip'
@@ -117,8 +116,6 @@ return require('packer').startup(function()
 	use 'zchee/deoplete-jedi'
 
 	--bufferline
-	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
-
 	--jumping
 	use 'unblevable/quick-scope'
 

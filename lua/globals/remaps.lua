@@ -39,11 +39,6 @@ vim.api.nvim_set_keymap('n', '<right>',  ':bn<CR> :redraw!<CR>', {silent=true})
 --hide everything
 vim.api.nvim_set_keymap('n', '<F5>', ':set relativenumber! number! showmode! showcmd! hidden! ruler!<CR>',options)
 
---magma
-vim.api.nvim_set_keymap('n', '<Leader>r', ':MagmaEvaluateLine<CR>', {silent=true})
-vim.api.nvim_set_keymap('v', '<Leader>r', ':<C-u>MagmaEvaluateVisual<CR>', {silent=true})
-vim.api.nvim_set_keymap('n', '<Leader>v', ':MagmaInit<CR>', options)
-
 --telescope
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
@@ -54,3 +49,6 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 --Goyo
 vim.api.nvim_set_keymap('n', '<F9>', ':Goyo<CR>', {})
 vim.api.nvim_set_keymap('n', '<F10>', ':set ft=python<CR>', {})
+
+--tree
+vim.api.nvim_set_keymap('n', '<C-n>', ":NvimTreeToggle<CR>", { noremap=true, silent=true})
